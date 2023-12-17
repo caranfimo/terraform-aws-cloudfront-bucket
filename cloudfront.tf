@@ -65,6 +65,8 @@ resource "aws_cloudfront_distribution" "this" {
     }
   }
 
+  custom_error_response = try(var.custom_error_response, null)
+
   tags = var.tags
 }
 

@@ -80,3 +80,12 @@ variable "ttl" {
 
   description = "The min, default and max TTLs set on the CloudFront distribution"
 }
+
+variable "custom_error_response" {
+  type = list(object({
+    error_caching_min_ttl = number
+    error_code            = number
+    response_code         = number
+    response_page_path    = string
+  }))
+}
