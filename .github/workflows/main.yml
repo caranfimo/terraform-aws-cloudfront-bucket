@@ -16,5 +16,5 @@ jobs:
     - name: Create Tag
       uses: ydataai/create-tag@v1
       with:
-        tag: 'v1.0.0'
-        message: 'Release v1.0.0'
+        tag: 'v1.1.0'
+        message: 'Release v1.1.0'
